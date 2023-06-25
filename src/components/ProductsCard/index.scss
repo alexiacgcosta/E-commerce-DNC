@@ -1,0 +1,51 @@
+@use "../../views/sass/variables" as *;
+
+.home {
+width: 1440px;
+
+
+  &__products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: 1440px;
+}
+  &__card {
+    width: 330px;
+    border-radius: 8px;
+    height: 337px;
+    border: 1px solid;
+    margin: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    border-color: $border-background-card
+
+    img {
+      height: 254px;
+    }
+    
+  
+    button{
+      text-decoration: none;
+      width: 128px;
+      height: 24px;
+      background-color: $contrast-color;
+      margin: 10px;
+
+    }
+    a{
+      text-decoration: none;
+      color: $white;
+    }
+  }
+}
+
+.__card-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
